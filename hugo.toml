@@ -1,0 +1,8 @@
+baseURL = 'http://127.0.0.1:4173/'
+locale = 'zh-Hant'
+title = '尋遊千年 2027｜AI 中國歷史創作工作坊'
+enableRobotsTXT = false
+disableKinds = ['taxonomy', 'term']
+
+[params]
+description = '尋遊千年 2027：中學生從中國歷史史料出發，完成 AI 一分鐘短片的校本創作工作坊。'
