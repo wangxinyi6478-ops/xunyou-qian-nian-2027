@@ -11,6 +11,208 @@
   --max-width: 1240px;
 }
 
+/* Distinct interaction languages for each tile family. */
+.value-item--archive {
+  border-top: 4px solid var(--rust);
+  border-radius: 0 14px 0 14px;
+  background:
+    linear-gradient(135deg, rgba(135, 60, 47, 0.12) 0 12px, transparent 12px),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.52), transparent 60%),
+    #eee1c9;
+}
+
+.value-item--archive::before {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  z-index: 1;
+  color: var(--rust);
+  content: "檔案摘錄";
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  pointer-events: none;
+}
+
+.value-item--archive:hover,
+.value-item--archive:focus-visible,
+.value-item--archive.is-selected {
+  border-color: var(--rust);
+  border-top-color: var(--gold);
+  background:
+    linear-gradient(135deg, rgba(242, 201, 91, 0.3) 0 12px, transparent 12px),
+    #e7d6b5;
+  box-shadow: 11px 12px 0 rgba(135, 60, 47, 0.2);
+  transform: translateY(-11px) rotate(-1.2deg);
+}
+
+.value-item--archive:nth-child(2):hover,
+.value-item--archive:nth-child(2):focus-visible,
+.value-item--archive:nth-child(2).is-selected {
+  transform: translateY(-11px) rotate(1.2deg);
+}
+
+.value-item--archive .value-number {
+  border-radius: 50%;
+}
+
+.value-item--archive:hover .value-number,
+.value-item--archive:focus-visible .value-number,
+.value-item--archive.is-selected .value-number {
+  border-radius: 3px;
+  background: var(--rust);
+  transform: rotate(-9deg) scale(1.1);
+}
+
+.fact-card--catalog {
+  border-top: 3px double rgba(135, 60, 47, 0.32);
+  border-right: 0;
+  border-bottom: 3px double rgba(135, 60, 47, 0.32);
+  border-left: 0;
+  border-radius: 50% 3px 50% 3px;
+  background:
+    repeating-linear-gradient(0deg, rgba(44, 36, 29, 0.025) 0 1px, transparent 1px 5px),
+    rgba(255, 255, 255, 0.34);
+  box-shadow: 0 7px 0 rgba(135, 60, 47, 0.12);
+}
+
+.fact-card--catalog::before {
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--rust);
+  font-size: 10px;
+}
+
+.fact-card--catalog:hover,
+.fact-card--catalog:focus-visible,
+.fact-card--catalog.is-selected {
+  border-top-color: var(--gold-soft);
+  border-bottom-color: var(--gold-soft);
+  border-radius: 3px 50% 3px 50%;
+  background:
+    repeating-linear-gradient(0deg, rgba(44, 36, 29, 0.035) 0 1px, transparent 1px 5px),
+    #eadbbf;
+  box-shadow: 0 12px 0 rgba(135, 60, 47, 0.18);
+  transform: translateY(-9px) rotate(1.8deg);
+}
+
+.fact-card--catalog:nth-child(2):hover,
+.fact-card--catalog:nth-child(2):focus-visible,
+.fact-card--catalog:nth-child(2).is-selected {
+  border-top-color: var(--teal-dark);
+  border-bottom-color: var(--teal-dark);
+  box-shadow: 0 12px 0 rgba(31, 117, 104, 0.16);
+  transform: translateY(-9px) rotate(-1.8deg);
+}
+
+.fact-card--catalog:nth-child(3):hover,
+.fact-card--catalog:nth-child(3):focus-visible,
+.fact-card--catalog:nth-child(3).is-selected {
+  border-top-color: var(--rust);
+  border-bottom-color: var(--rust);
+  transform: translateY(-9px) rotate(0.8deg);
+}
+
+.journey-step--progress {
+  border-width: 0 0 3px 3px;
+  border-radius: 17px 4px 17px 4px;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.5), transparent 52%),
+    rgba(243, 232, 211, 0.76);
+  box-shadow: 3px 4px 0 rgba(45, 118, 107, 0.14);
+}
+
+.journey-step--progress::before {
+  width: 0;
+  transform: skewX(-12deg);
+  transform-origin: left center;
+}
+
+.journey-step--progress:hover,
+.journey-step--progress:focus-visible,
+.journey-step--progress.is-selected {
+  border-color: var(--teal-dark);
+  border-bottom-color: var(--gold);
+  border-radius: 4px 17px 4px 17px;
+  box-shadow: 8px 11px 0 rgba(31, 117, 104, 0.2);
+  transform: translateY(-9px) scale(1.015);
+}
+
+.journey-step--progress:hover span,
+.journey-step--progress:focus-visible span,
+.journey-step--progress.is-selected span {
+  border-radius: 50%;
+  background: var(--rust);
+  color: var(--paper);
+  transform: translateY(-4px) rotate(-10deg) scale(1.12);
+}
+
+.journey-step--progress.is-visited {
+  border-bottom-color: var(--teal-dark);
+  box-shadow: 3px 4px 0 rgba(31, 117, 104, 0.11);
+}
+
+.journey-step--progress.is-visited span {
+  background: var(--teal-dark);
+}
+
+.event--timeline {
+  border-top: 5px solid var(--event-accent);
+  border-radius: 18px 18px 5px 5px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), transparent 50%),
+    rgba(243, 232, 211, 0.68);
+}
+
+.event--timeline:hover,
+.event--timeline:focus-visible,
+.event--timeline.is-selected {
+  border-top-color: var(--gold);
+  border-color: var(--event-accent);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), transparent 44%),
+    #e7d7b9;
+  box-shadow: 9px 12px 0 rgba(31, 117, 104, 0.16);
+  transform: translateY(-11px) scale(1.025);
+}
+
+.event--timeline:hover .event-era,
+.event--timeline:focus-visible .event-era,
+.event--timeline.is-selected .event-era {
+  color: var(--event-accent);
+  letter-spacing: 0.16em;
+  transform: translateY(-2px);
+}
+
+.event--timeline .event-era {
+  transition: color 200ms ease, letter-spacing 200ms ease, transform 200ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .value-item--archive,
+  .fact-card--catalog,
+  .journey-step--progress,
+  .event--timeline,
+  .event--timeline .event-era {
+    transition: none;
+  }
+
+  .value-item--archive:hover,
+  .value-item--archive:focus-visible,
+  .value-item--archive.is-selected,
+  .fact-card--catalog:hover,
+  .fact-card--catalog:focus-visible,
+  .fact-card--catalog.is-selected,
+  .journey-step--progress:hover,
+  .journey-step--progress:focus-visible,
+  .journey-step--progress.is-selected,
+  .event--timeline:hover,
+  .event--timeline:focus-visible,
+  .event--timeline.is-selected {
+    transform: none;
+  }
+}
+
 /* Interactive pass: each small tile has its own motion language. */
 .value-item,
 .fact-card,
@@ -3592,5 +3794,128 @@ body::before {
 
   .register-actions .button {
     width: min(100%, 270px);
+  }
+}
+
+/* Final cascade pass: keep the four tile families visibly different. */
+.value-grid .value-item--archive {
+  border-top: 4px solid var(--rust);
+  border-radius: 0 14px 0 14px;
+  background:
+    linear-gradient(135deg, rgba(135, 60, 47, 0.12) 0 12px, transparent 12px),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.52), transparent 60%),
+    #eee1c9;
+}
+
+.value-grid .value-item--archive:hover,
+.value-grid .value-item--archive:focus-visible,
+.value-grid .value-item--archive.is-selected {
+  border-color: var(--rust);
+  border-top-color: var(--gold);
+  background:
+    linear-gradient(135deg, rgba(242, 201, 91, 0.3) 0 12px, transparent 12px),
+    #e7d6b5;
+  box-shadow: 11px 12px 0 rgba(135, 60, 47, 0.2);
+  transform: translateY(-11px) rotate(-1.2deg);
+}
+
+.value-grid .value-item--archive:nth-child(2):hover,
+.value-grid .value-item--archive:nth-child(2):focus-visible,
+.value-grid .value-item--archive:nth-child(2).is-selected {
+  transform: translateY(-11px) rotate(1.2deg);
+}
+
+.teacher-facts .fact-card--catalog {
+  border-top: 3px double rgba(135, 60, 47, 0.32);
+  border-right: 0;
+  border-bottom: 3px double rgba(135, 60, 47, 0.32);
+  border-left: 0;
+  border-radius: 50% 3px 50% 3px;
+  background:
+    repeating-linear-gradient(0deg, rgba(44, 36, 29, 0.025) 0 1px, transparent 1px 5px),
+    rgba(255, 255, 255, 0.34);
+  box-shadow: 0 7px 0 rgba(135, 60, 47, 0.12);
+}
+
+.teacher-facts .fact-card--catalog:hover,
+.teacher-facts .fact-card--catalog:focus-visible,
+.teacher-facts .fact-card--catalog.is-selected {
+  border-top-color: var(--gold-soft);
+  border-bottom-color: var(--gold-soft);
+  border-radius: 3px 50% 3px 50%;
+  background:
+    repeating-linear-gradient(0deg, rgba(44, 36, 29, 0.035) 0 1px, transparent 1px 5px),
+    #eadbbf;
+  box-shadow: 0 12px 0 rgba(135, 60, 47, 0.18);
+  transform: translateY(-9px) rotate(1.8deg);
+}
+
+.teacher-facts .fact-card--catalog:nth-child(2):hover,
+.teacher-facts .fact-card--catalog:nth-child(2):focus-visible,
+.teacher-facts .fact-card--catalog:nth-child(2).is-selected {
+  border-top-color: var(--teal-dark);
+  border-bottom-color: var(--teal-dark);
+  box-shadow: 0 12px 0 rgba(31, 117, 104, 0.16);
+  transform: translateY(-9px) rotate(-1.8deg);
+}
+
+.journey-track .journey-step--progress {
+  border-width: 0 0 3px 3px;
+  border-radius: 17px 4px 17px 4px;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.5), transparent 52%),
+    rgba(243, 232, 211, 0.76);
+  box-shadow: 3px 4px 0 rgba(45, 118, 107, 0.14);
+}
+
+.journey-track .journey-step--progress:hover,
+.journey-track .journey-step--progress:focus-visible,
+.journey-track .journey-step--progress.is-selected {
+  border-color: var(--teal-dark);
+  border-bottom-color: var(--gold);
+  border-radius: 4px 17px 4px 17px;
+  box-shadow: 8px 11px 0 rgba(31, 117, 104, 0.2);
+  transform: translateY(-9px) scale(1.015);
+}
+
+.journey-track .journey-step--progress.is-visited {
+  border-bottom-color: var(--teal-dark);
+  box-shadow: 3px 4px 0 rgba(31, 117, 104, 0.11);
+}
+
+.event-line .event--timeline {
+  border-top: 5px solid var(--event-accent);
+  border-radius: 18px 18px 5px 5px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), transparent 50%),
+    rgba(243, 232, 211, 0.68);
+}
+
+.event-line .event--timeline:hover,
+.event-line .event--timeline:focus-visible,
+.event-line .event--timeline.is-selected {
+  border-top-color: var(--gold);
+  border-color: var(--event-accent);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), transparent 44%),
+    #e7d7b9;
+  box-shadow: 9px 12px 0 rgba(31, 117, 104, 0.16);
+  transform: translateY(-11px) scale(1.025);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .value-grid .value-item--archive:hover,
+  .value-grid .value-item--archive:focus-visible,
+  .value-grid .value-item--archive.is-selected,
+  .teacher-facts .fact-card--catalog:hover,
+  .teacher-facts .fact-card--catalog:focus-visible,
+  .teacher-facts .fact-card--catalog.is-selected,
+  .journey-track .journey-step--progress:hover,
+  .journey-track .journey-step--progress:focus-visible,
+  .journey-track .journey-step--progress.is-selected,
+  .event-line .event--timeline:hover,
+  .event-line .event--timeline:focus-visible,
+  .event-line .event--timeline.is-selected {
+    transform: none;
   }
 }
