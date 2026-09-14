@@ -26,3 +26,8 @@ test('interactive controls keep a distinct pressed state for each family', () =>
   assert.match(css, /\.journey-step--progress\.is-selected/);
   assert.match(css, /\.event--timeline\.is-selected/);
 });
+
+test('catalog cards use the new index-card treatment without the old cue', () => {
+  assert.doesNotMatch(css, /content:\s*["']檔案摘錄["']/);
+  assert.match(css, /\.teacher-facts \.fact-card--catalog\s*\{[\s\S]*?border-radius:\s*4px/);
+});
