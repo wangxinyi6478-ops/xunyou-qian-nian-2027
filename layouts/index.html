@@ -21,7 +21,7 @@
           <span class="brand-divider" aria-hidden="true"></span>
           <span class="brand-copy">
             <strong>尋遊千年</strong>
-            <small>AI 歷史創作工作坊 · 2027</small>
+            <small><span translate="no">Molekiu</span>｜AI 歷史創作工作坊 · 2027</small>
           </span>
         </a>
         <nav class="site-nav">
@@ -82,10 +82,16 @@
               <div class="section-kicker section-kicker-dark"><span>工作坊內容一覽</span></div>
               <h3>先把史實查清楚，<br /><span>再讓學生放膽想像。</span></h3>
               <p>學生可以自己選人物、視角和畫面風格。資料要有根據，對白、敘事和影像則留給他們發揮；作品完成前，再由老師和小組一起核對。</p>
-              <div class="teacher-facts">
-                <div><strong>約 20 人</strong><small>每班參與人數</small></div>
-                <div><strong>分 4 組</strong><small>每組共同創作</small></div>
-                <div><strong>約 80 分鐘</strong><small>每節工作坊時間</small></div>
+            <div class="teacher-facts" aria-label="工作坊基本安排">
+                <button class="fact-card" type="button" data-stamp="班級" data-title="每班約 20 人" data-note="讓每位學生都有清楚的角色與發言空間。" aria-pressed="false">
+                  <strong>約 20 人</strong><small>每班參與人數</small>
+                </button>
+                <button class="fact-card" type="button" data-stamp="分組" data-title="分成 4 組" data-note="每組共同完成一條屬於自己的歷史短片。" aria-pressed="false">
+                  <strong>分 4 組</strong><small>每組共同創作</small>
+                </button>
+                <button class="fact-card" type="button" data-stamp="節奏" data-title="每節約 80 分鐘" data-note="學校可按校本安排，組合成 3 或 4 節工作坊。" aria-pressed="false">
+                  <strong>約 80 分鐘</strong><small>每節工作坊時間</small>
+                </button>
               </div>
             </div>
             <figure class="collage-frame">
@@ -94,26 +100,30 @@
             </figure>
           </div>
           <div class="value-grid">
-            <article class="value-item">
+            <button class="value-item" type="button" data-title="連到課堂" data-note="中史提供內容，中國語文處理說法；資訊科技讓作品成形。" aria-pressed="false">
               <span class="value-number">01</span>
               <h3>連到課堂</h3>
               <p>中史提供內容，中國語文處理說法；資訊科技讓作品成形。</p>
-            </article>
-            <article class="value-item value-item-accent">
+              <span class="tile-cue" aria-hidden="true">點一下，看這張卡的重點</span>
+            </button>
+            <button class="value-item value-item-accent" type="button" data-title="成果留得下" data-note="每組完成 4 條、每條約 1 分鐘的歷史短片，學習成果會變成真正的作品。" aria-pressed="false">
               <span class="value-number">02</span>
               <h3>成果留得下</h3>
               <p>每組完成 4 條、每條約 1 分鐘的歷史短片，學習成果會變成真正的作品。</p>
-            </article>
-            <article class="value-item">
+              <span class="tile-cue" aria-hidden="true">點一下，看這張卡的重點</span>
+            </button>
+            <button class="value-item" type="button" data-title="學生自己講" data-note="學生自己選人物和角度，查完資料才落筆；AI 只是幫手。" aria-pressed="false">
               <span class="value-number">03</span>
               <h3>學生自己講</h3>
               <p>學生自己選人物和角度，查完資料才落筆；AI 只是幫手。</p>
-            </article>
-            <article class="value-item">
+              <span class="tile-cue" aria-hidden="true">點一下，看這張卡的重點</span>
+            </button>
+            <button class="value-item" type="button" data-title="按學校安排" data-note="每班約 20 人，分 4 組；每節 80 分鐘，學校可安排 3 或 4 節。" aria-pressed="false">
               <span class="value-number">04</span>
               <h3>按學校安排</h3>
               <p>每班約 20 人，分 4 組；每節 80 分鐘，學校可安排 3 或 4 節。</p>
-            </article>
+              <span class="tile-cue" aria-hidden="true">點一下，看這張卡的重點</span>
+            </button>
           </div>
         </section>
 
@@ -129,12 +139,12 @@
           </figure>
           <div class="journey-track" aria-label="學生創作流程">
             <div class="journey-line"></div>
-            <div class="journey-step"><span>01</span><strong>查史料</strong><small>找出事件怎樣發生</small></div>
-            <div class="journey-step"><span>02</span><strong>定人物</strong><small>選一個說故事的人</small></div>
-            <div class="journey-step"><span>03</span><strong>寫劇本</strong><small>把資料寫成對白</small></div>
-            <div class="journey-step"><span>04</span><strong>做分鏡</strong><small>決定每一格畫面</small></div>
-            <div class="journey-step"><span>05</span><strong>剪片配音</strong><small>完成約一分鐘</small></div>
-            <div class="journey-step"><span>06</span><strong>一起檢查</strong><small>確認史實和表達</small></div>
+            <button class="journey-step" type="button" data-title="查史料" data-note="找出事件怎樣發生" aria-pressed="false"><span>01</span><strong>查史料</strong><small>找出事件怎樣發生</small></button>
+            <button class="journey-step" type="button" data-title="定人物" data-note="選一個說故事的人" aria-pressed="false"><span>02</span><strong>定人物</strong><small>選一個說故事的人</small></button>
+            <button class="journey-step" type="button" data-title="寫劇本" data-note="把資料寫成對白" aria-pressed="false"><span>03</span><strong>寫劇本</strong><small>把資料寫成對白</small></button>
+            <button class="journey-step" type="button" data-title="做分鏡" data-note="決定每一格畫面" aria-pressed="false"><span>04</span><strong>做分鏡</strong><small>決定每一格畫面</small></button>
+            <button class="journey-step" type="button" data-title="剪片配音" data-note="完成約一分鐘" aria-pressed="false"><span>05</span><strong>剪片配音</strong><small>完成約一分鐘</small></button>
+            <button class="journey-step" type="button" data-title="一起檢查" data-note="確認史實和表達" aria-pressed="false"><span>06</span><strong>一起檢查</strong><small>確認史實和表達</small></button>
           </div>
         </section>
 
@@ -156,12 +166,12 @@
             </aside>
           </div>
           <div class="event-line" aria-label="中國歷史事件線">
-            <div class="event event-first"><span class="event-era">秦</span><strong>天下一統</strong><small>秦制怎樣落地</small></div>
-            <div class="event"><span class="event-era">漢</span><strong>張騫出使</strong><small>使團與絲路</small></div>
-            <div class="event"><span class="event-era">唐</span><strong>三省六部</strong><small>誰來決定、誰來執行</small></div>
-            <div class="event"><span class="event-era">宋</span><strong>城市與知識</strong><small>城市生活</small></div>
-            <div class="event"><span class="event-era">明</span><strong>鄭和遠航</strong><small>鄭和船隊</small></div>
-            <div class="event"><span class="event-era">2027</span><strong>AI 重新講述中國歷史</strong><small>從學生的角度開始</small></div>
+            <button class="event event-first" type="button" data-title="秦・天下一統" data-note="秦制怎樣落地" aria-pressed="false"><span class="event-era">秦</span><strong>天下一統</strong><small>秦制怎樣落地</small></button>
+            <button class="event" type="button" data-title="漢・張騫出使" data-note="使團與絲路" aria-pressed="false"><span class="event-era">漢</span><strong>張騫出使</strong><small>使團與絲路</small></button>
+            <button class="event" type="button" data-title="唐・三省六部" data-note="誰來決定、誰來執行" aria-pressed="false"><span class="event-era">唐</span><strong>三省六部</strong><small>誰來決定、誰來執行</small></button>
+            <button class="event" type="button" data-title="宋・城市與知識" data-note="城市生活" aria-pressed="false"><span class="event-era">宋</span><strong>城市與知識</strong><small>城市生活</small></button>
+            <button class="event" type="button" data-title="明・鄭和遠航" data-note="鄭和船隊" aria-pressed="false"><span class="event-era">明</span><strong>鄭和遠航</strong><small>鄭和船隊</small></button>
+            <button class="event" type="button" data-title="2027・AI 重新講述中國歷史" data-note="從學生的角度開始" aria-pressed="false"><span class="event-era">2027</span><strong>AI 重新講述中國歷史</strong><small>從學生的角度開始</small></button>
           </div>
         </section>
 
@@ -228,8 +238,10 @@
         </section>
       </main>
 
+      <p class="interaction-status" id="interaction-status" aria-live="polite"></p>
+
       <footer class="site-footer">
-        <span>尋遊千年 2027</span>
+        <span><span translate="no">Molekiu</span>／尋遊千年 2027</span>
         <span>穿越古今・AI 創作未來</span>
         <a href="#top">返回頂部 ↑</a>
       </footer>

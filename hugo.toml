@@ -1,6 +1,6 @@
 baseURL = 'http://127.0.0.1:4173/'
 locale = 'zh-Hant'
-title = '尋遊千年 2027｜AI 中國歷史創作工作坊'
+title = 'Molekiu／尋遊千年 2027｜AI 中國歷史創作工作坊'
 enableRobotsTXT = false
 disableKinds = ['taxonomy', 'term']
 
