@@ -16,6 +16,7 @@
 .fact-card,
 .journey-step,
 .event {
+  appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 
