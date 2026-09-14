@@ -79,26 +79,6 @@
   transform: rotate(9deg) translateY(-2px) scale(1.08);
 }
 
-.tile-cue {
-  position: absolute !important;
-  right: 12px;
-  bottom: 10px;
-  left: 12px;
-  color: var(--teal-dark);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  opacity: 0;
-  transform: translateY(5px);
-  transition: opacity 180ms ease, transform 180ms ease;
-}
-
-.value-item:hover .tile-cue,
-.value-item:focus-visible .tile-cue,
-.value-item.is-selected .tile-cue {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .fact-card {
   position: relative;
   display: block;
@@ -289,10 +269,6 @@
   .journey-step::before,
   .value-item .value-number,
   .journey-step span,
-  .tile-cue {
-    transition: none !important;
-  }
-
   .value-item:hover,
   .value-item:focus-visible,
   .value-item.is-selected,

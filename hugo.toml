@@ -1,4 +1,4 @@
-baseURL = 'http://127.0.0.1:4173/'
+baseURL = 'https://xunyou.molekiu.com/'
 locale = 'zh-Hant'
 title = 'Molekiu／尋遊千年 2027｜AI 中國歷史創作工作坊'
 enableRobotsTXT = false
